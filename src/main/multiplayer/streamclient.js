@@ -2,7 +2,7 @@
 import $ from 'jquery';
 import {nullInputs, nullInput} from "../../input/input";
 import {encodeInput, decodeInput} from "./encode";
-import deepstream from 'deepstream.io-client-js';
+//import deepstream from 'deepstream.io-client-js';
 import {
   setPlayerType,
   ports,
@@ -43,7 +43,7 @@ const eurServer = 'wss://deepmleur.herokuapp.com:443';
 let pickedServer = 'america';
 let packetNumber = 0;
 
-$("#america").on("click", function () {
+/*$("#america").on("click", function () {
   localStorage.setItem('pickedServer', 'america');
   $("#europe").attr('checked', false);
   $("#localGame").attr('checked', false);
@@ -114,7 +114,7 @@ export function logIntoServer() {
     ds = deepstream(localStorage.getItem('lastLANIP')+":6020").login(null, _onLoggedIn);
   }
 
-}
+}*/
 
 function getPlayerStatusRecord(playerID) {
   return playerStatusRecords[playerID];

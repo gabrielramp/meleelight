@@ -1,7 +1,7 @@
 /*eslint-disable*/
 import $ from 'jquery';
 import {nullInputs} from "../../input/input";
-import deepstream from 'deepstream.io-client-js';
+//import deepstream from 'deepstream.io-client-js';
 import {
   setPlayerType,
   setMtype,
@@ -22,10 +22,10 @@ let GAME_ID;
 let playerID;
 let HOST_GAME_ID = null;
 
-export function logIntoServerAsSpectator() {
+/*export function logIntoServerAsSpectator() {
   ds = deepstream("wss://deepml.herokuapp.com:443").login(null, onSpectate);
 
-}
+}*/
 
 function startRoom() {
   GAME_ID = ds.getUid().replace("-", "");
